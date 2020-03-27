@@ -175,7 +175,8 @@ class BaseRetrying(object):
 
     def __init__(self,
                  sleep=sleep,
-                 stop=stop_never, wait=wait_none(),
+                 stop=stop_never,
+                 wait=wait_none(),
                  retry=retry_if_exception_type(),
                  before=before_nothing,
                  after=after_nothing,
